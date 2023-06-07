@@ -1,6 +1,10 @@
 h1, h2{
     font-family: Muli;
 }
-h3, a, p{
+h3{
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+a, p{
     font-family: 'Prompt', sans-serif;
 }
