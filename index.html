@@ -10,43 +10,53 @@
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="https://use.typekit.net/lxz1bnq.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
 		<title>BY LAWS</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-light bg-light">
 			<div class="container-fluid">
-				<a href="#" class="navbar-brand fs-6 font-monospace fw-bold"
+				<a href="#" class="navbar-brand fs-6 font-weight-bold"
 					>Exploring the Impact of Immigration on Economic Conditions</a
 				>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navCollapsable"
-					aria-controls="navCollapsable"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navCollapsable">
-					<ul class="navbar-nav fs-6 font-monospace"></ul>
-				</div>
 			</div>
 		</nav>
-		<div class="container col-xxl-8 px-4 py-5">
-			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-				<div class="col-10 col-sm-8 col-lg-6">img</div>
-				<div class="col-lg-6">
-					<h1>Can immigration lead to better economic conditions?</h1>
-					<p>
+		<main>
+			<section class="title-container container-fluid mt-3 mb-3">
+                <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2 class="display-3 text-primary font-weight-bold ">
+                        Are immigrants in Canada contributing positively to the economy?
+                    </h2>
+                    <h3 class="display-6">
 						Participate in our analysis of immigration data to unveil both
 						distinctions and similarities between different immigrant groups. By
 						exploring factors such as gender, age, education levels, and
 						employment status, we aim to determine the potential impact of
 						immigrants on a host country's economic well-being.
-					</p>
-				</div>
+                    </h3>
+                    <ul class="row gx-3 d-flex justify-content-between align-items-start list-unstyled fw-light text-muted border-bottom border-3 border-dark">
+                        <li class="col">
+                            <p>Luca DE BOECK</p>
+                        </li>
+                        <li class="col">
+                            <p>Yu CHEN</p>
+                        </li>
+                        <li class="col">
+                            <p>Wai Sze CHENG</p>
+                        </li>
+                        <li class="col">
+                            <p>Ka Ho LEE</p>
+                        </li>
+						<li class="col">
+                            <p>Ali MALIK</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 				<tableau-viz
 					id="tableauViz"
 					src="https://public.tableau.com/views/Immigration_16851150702490/Sheet3?:language=en-US&:display_count=n&:origin=viz_share_link"
@@ -56,6 +66,17 @@
                     width="1000px"
 				>
 				</tableau-viz>
+			</main>
+			<div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </a>
+                        <span class="text-muted">Data Visualisation 2022 - Group 2</span>
+                    </div>
+                </footer>
+            </div>
 				<script
 					type="module"
 					src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
