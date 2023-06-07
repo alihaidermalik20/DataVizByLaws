@@ -1,102 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="https://use.typekit.net/lxz1bnq.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-		<title>BY LAWS</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-light bg-light">
-			<div class="container-fluid">
-				<a href="#" class="navbar-brand fs-6 font-weight-bold"
-					>Exploring the Impact of Immigration on Economic Conditions</a
-				>
-			</div>
-		</nav>
-		<main>
-			<section class="title-container container-fluid mt-3 mb-3">
-                <div class="d-flex flex-column justify-content-center align-items-center text-center">
-                    <h2 class="display-3 text-primary font-weight-bold ">
-                        Are immigrants in Canada contributing positively to the economy?
-                    </h2>
-                    <h3 class="display-6">
-						Participate in our analysis of immigration data to unveil both
-						distinctions and similarities between different immigrant groups. By
-						exploring factors such as gender, age, education levels, and
-						employment status, we aim to determine the potential impact of
-						immigrants on a host country's economic well-being.
-                    </h3>
-                    <ul class="row gx-3 d-flex justify-content-between align-items-start list-unstyled fw-light text-muted border-bottom border-3 border-dark">
-                        <li class="col">
-                            <p>Luca DE BOECK</p>
-                        </li>
-                        <li class="col">
-                            <p>Yu CHEN</p>
-                        </li>
-                        <li class="col">
-                            <p>Wai Sze CHENG</p>
-                        </li>
-                        <li class="col">
-                            <p>Ka Ho LEE</p>
-                        </li>
-						<li class="col">
-                            <p>Ali MALIK</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-				<tableau-viz
-					id="tableauViz"
-					src="https://public.tableau.com/views/Immigration_16851150702490/Sheet3?:language=en-US&:display_count=n&:origin=viz_share_link"
-					toolbar="bottom"
-					hide-tabs
-                    height="1000px"
-                    width="1000px"
-				>
-				</tableau-viz>
-			</main>
-			<div class="container">
-                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                            <i class="bi bi-bar-chart-fill"></i>
-                        </a>
-                        <span class="text-muted">Data Visualisation 2022 - Group 2</span>
-                    </div>
-                </footer>
-            </div>
-				<script
-					type="module"
-					src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
-				></script>
-				<script
-					src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-					integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-					crossorigin="anonymous"
-				></script>
-				<script
-					src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-					integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-					crossorigin="anonymous"
-				></script>
-				<script
-					src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-					integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-					crossorigin="anonymous"
-				></script>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/lxz1bnq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BY LAWS</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a href="#" class="navbar-brand fs-6 font-weight-bold">
+        <div class="d-none d-md-block text-center">
+          Exploring the Impact of Immigration on Economic Conditions
+        </div>
+      </a>
+    </nav>
+    <main class="container-fluid">
+      <section class="container-fluid mp-3 mt-3">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-center"
+        >
+          <h2
+            class="display-3 text-primary font-weight-bold text-center overflow-wrap text-sm-center"
+          >
+            Are immigrants in Canada contributing positively to the economy?
+          </h2>
+          <h3 class="display-6 text-center">
+            Participate in our analysis of immigration data to unveil both
+            distinctions and similarities between different immigrant groups. By
+            exploring factors such as gender, age, education levels, and
+            employment status, we aim to determine the potential impact of
+            immigrants on a host country's economic well-being.
+          </h3>
+          <ul
+            class="row gx-3 d-flex justify-content-between align-items-start list-unstyled fw-light text-muted border-bottom border-3 border-dark mt-3"
+          >
+            <li class="col">
+              <p>Luca DE BOECK</p>
+            </li>
+            <li class="col">
+              <p>Yu CHEN</p>
+            </li>
+            <li class="col">
+              <p>Wai Sze CHENG</p>
+            </li>
+            <li class="col">
+              <p>Ka Ho LEE</p>
+            </li>
+            <li class="col">
+              <p>Ali MALIK</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <h3 class="font-weight-bold">Introduction</h3>
+        <h4>Why are we focusing on the economic contribution in Canada?</h4>
+        <p>
+          Immigration is a global phenomenon, and Canada, as one of the major
+          immigrant-receiving countries, offers an ideal case study. Immigration
+          has played an integral role in shaping Canada's socio-economic
+          landscape. Over the years, Canada has embraced immigration to offset
+          its aging population and labor shortages. The country's diverse and
+          inclusive society, along with its policy of encouraging immigration,
+          makes it a compelling subject of study.
+        </p>
+        <p>
+          However, the discourse around immigration often lacks data-driven
+          insights, which can lead to misinformation and unfounded biases. This
+          project aims to bring a data-centric perspective to the discourse,
+          fostering a better understanding of immigrants' roles in Canadian
+          society. We believe that this visualization is specifically designed
+          for Canadian immigration officials, considering their unique role in
+          shaping immigration policy. The power of data to shape narratives and
+          influence decision-making processes is also of great interest.
+        </p>
+        <h4>How can we evaluate the impact of immigrants on economics?</h4>
+        <p>
+          Globally, we can try to explore the relationship between GDP per
+          capita and the immigration data of different developed countries, for
+          example G7. When focusing on Canada, we can try to look at the
+          national income contribution by immigrants. The average or median
+          incomes between local Canadian and immigrants can also be compared.
+          Employment rate can also be used to see the percentage of immigrants
+          who are contributing to society. The relationship economic
+          contribution and different aspects of immigrants will also be
+          explored, including gender, number of landed years, educational
+          levels, visa types and birthplace by continents.
+        </p>
+        <p>
+          All data used in this project is from World Bank and Canada census,
+          which are official and authoritative.
+        </p>
+        <h4>
+          How can we explore if there is a positive impact from immigrants
+          positively?
+        </h4>
+        <p>
+          This project forms a coherent narrative about the economic
+          contributions of immigrants in Canada. The story begins with an
+          overview of immigration in developed countries, setting the global
+          context. It then delves into the specifics of Canada, examining the
+          relationship between GDP and employment rate. We further narrow our
+          focus to the demographic makeup of immigrants in Canada, linking it to
+          their employment rate. Then, we explore how education influences
+          employment and income levels, ultimately leading to a discussion on
+          different immigration schemes and their economic contributions.
+        </p>
+      </section>
+      <section class="container-fluid">
+        <h4 class="font-weight-bold">
+          Global overview of immigration in developed countries (G7)
+        </h4>
+        <p>
+          Exploring the immigration globally can always give us insights if
+          there is a relationship between immigration and economic contribution,
+          especially in developed countries like G7, which have huge success
+          economically.
+        </p>
+        <h4>Global immigration composition</h4>
+        <p>
+          In the following Sankey graph, it shows the migration of immigrants
+          from their birthplaces (top 10 countries of origin) to the developed
+          countries (G7).
+        </p>
+        <!-- <tableau-viz
+							id="tableauViz"
+							src="https://public.tableau.com/views/01SankeyforG7/Sankey?:language=en-US&:display_count=n&:origin=viz_share_link"
+							toolbar="bottom"
+							hide-tabs
+
+						>
+						</tableau-viz> -->
+        <h4>
+          Exploring the correlation of GDP per capita and the annual net
+          immigrants
+        </h4>
+        <p>
+          It is not easy to observe the absolute relationship between GDP per
+          capita and the numbers of immigrants moving in. We can explore the
+          data from World Bank to try to find a correlation
+        </p>
+        <!-- <tableau-viz
+							id="tableauViz"
+							src="https://public.tableau.com/views/GDP_netImmigration_16860060872680/GDPpercapitaVSNetImmigrants?:language=en-US&:display_count=n&:origin=viz_share_link"
+							toolbar="bottom"
+							hide-tabs
+						>
+						</tableau-viz> -->
+        <p>
+          The graph shows the average GDP per capita in US dollars for G7
+          countries for the years 2010-2021. We can see some effect of a rise on
+          net immigration on GDP per capita in US dollars in the following
+          years. For example, a rise in Net Immigrants in 2016 is followed by a
+          rise in GDP per Capita in 2017 and 2018 or a fall in Net Immigrants in
+          2013 and 2014 is followed by a fall in GDP per Capita in 2015 and
+          2016.
+          <span class="font-italic"
+            >There is likely a positive correlation between GDP per capita and
+            net immigrants related to net immigrants of 4 years ago.</span
+          >
+        </p>
+        <!-- <tableau-viz
+							id="tableauViz"
+							src="https://public.tableau.com/views/GDP_netImmigration_correlation_previousYears_16860064722900/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
+							toolbar="bottom"
+							hide-tabs
+						>
+						</tableau-viz> -->
+		<p>Here, we relate the GDP per capita of that year and the net immigration number of precious year(s). 
+			If we can observe a rising line cross different spots, it shows a positive correlation between 2 factors.
+			For the effect of net immigration of last year on GDP per Capita, it becomes positive for all except US, UK, and Canada. Italy shows a strong correlation of 0.75 of last year net immigration on GDP per capita. 
+			Correlation of net immigrants 2 years prior on the GDP per capita shows a positive correlation for all except Canada and UK. However, the average correlation is still quite low at 0.225.
+			Net immigrants of 3 years prior correlation with GDP per capita show only UK as negative correlation with average correlation of 0.32
+			Net immigrants of 4 years prior correlation with GDP per capita, all countries show a positive correlation with an average correlation of 0.38 and with United States showing strong correlation of 0.73.
+			<span class="font-italic">We can conclude that immigration could have a positive correlation in the G7 countries and the effect is stronger after 4 years varying from country to country.</span> 
+			</p>
+      </section>
+	  <section class="container-fluid">
+		<h3 class="font-weight-bold">An overview of immigration in Canada</h3>
+		<p>Here, we take a look at demography of the immigrants, the overall labour composition and the income comparison between immigrants and non-immigrants.</p>
+		<h4>Immigrants in Canada are from all over the world</h4>
+		<!-- <tableau-viz
+							id="tableauViz"
+							src="https://public.tableau.com/views/worldMap_16860100596800/sheet1?:language=en-US&:display_count=n&:origin=viz_share_link"
+							toolbar="bottom"
+							hide-tabs
+						>
+		</tableau-viz> -->
+		<p class="font-italic">Top 5 birhtplace of immigrants in Canada: China, The Philippines, India, UK and the US</p>
+		<tableau-viz
+							id="tableauViz"
+							src="https://public.tableau.com/views/worldMap_16860100596800/sheet1?:language=en-US&:display_count=n&:origin=viz_share_link"
+							toolbar="bottom"
+							hide-tabs
+						>
+		</tableau-viz>
+		<p class="font-italic">Most local Canadian chose the United States as an immigration destination</p>
+	  </section>
+    </main>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <i class="bi bi-bar-chart-fill"></i>
+          </a>
+          <span class="text-muted">Data Visualisation 2022 - Group 2</span>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
